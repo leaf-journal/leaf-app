@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  leaf-journal
 //
-//  Created by Vibhuti Sharma on 2/21/23.
+//  Created by Leaf Journal Team on 2/21/23.
 //
 
 import UIKit
