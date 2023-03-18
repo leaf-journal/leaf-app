@@ -16,6 +16,7 @@
 		239A549829A5A9C1009E55F0 /* leaf_journalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A549729A5A9C1009E55F0 /* leaf_journalTests.swift */; };
 		239A54A229A5A9C1009E55F0 /* leaf_journalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54A129A5A9C1009E55F0 /* leaf_journalUITests.swift */; };
 		239A54A429A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54A329A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift */; };
+		C67857E229C5725700935D68 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67857E129C5725700935D68 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		239A549D29A5A9C1009E55F0 /* leaf-journalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "leaf-journalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		239A54A129A5A9C1009E55F0 /* leaf_journalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaf_journalUITests.swift; sourceTree = "<group>"; };
 		239A54A329A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaf_journalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C67857E129C5725700935D68 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				239A548929A5A9C1009E55F0 /* Assets.xcassets */,
 				239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */,
 				239A548E29A5A9C1009E55F0 /* Info.plist */,
+				C67857E129C5725700935D68 /* Profile.storyboard */,
 			);
 			path = "leaf-journal";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			files = (
 				239A548D29A5A9C1009E55F0 /* LaunchScreen.storyboard in Resources */,
 				239A548A29A5A9C1009E55F0 /* Assets.xcassets in Resources */,
+				C67857E229C5725700935D68 /* Profile.storyboard in Resources */,
 				239A548829A5A9BF009E55F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
