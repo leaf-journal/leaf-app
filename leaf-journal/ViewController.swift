@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sadButton: UIButton!
     @IBOutlet weak var journalInput: UITextField!
     @IBOutlet weak var helloButton: UIButton!
-    @IBOutlet weak var date: UILabel! //to do later
+    @IBOutlet weak var dateLabel: UILabel!
     
     var happyButtonPressed = false
     var sadButtonPressed = false
@@ -38,6 +38,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // get the current date
+        let currentDate = Date()
+        
+        // create a date formatter
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE MMM dd"
+        
+        // set the formatted date as the text of the label
+        dateLabel.text = dateFormatter.string(from: currentDate)
       
         let AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let ModelRef = AppDelegate.modelRef
