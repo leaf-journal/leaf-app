@@ -16,6 +16,7 @@
 		239A549829A5A9C1009E55F0 /* leaf_journalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A549729A5A9C1009E55F0 /* leaf_journalTests.swift */; };
 		239A54A229A5A9C1009E55F0 /* leaf_journalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54A129A5A9C1009E55F0 /* leaf_journalUITests.swift */; };
 		239A54A429A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54A329A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift */; };
+		239A54B129C3E30D009E55F0 /* JournalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54B029C3E30D009E55F0 /* JournalModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		239A549D29A5A9C1009E55F0 /* leaf-journalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "leaf-journalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		239A54A129A5A9C1009E55F0 /* leaf_journalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaf_journalUITests.swift; sourceTree = "<group>"; };
 		239A54A329A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaf_journalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		239A54B029C3E30D009E55F0 /* JournalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				239A548229A5A9BF009E55F0 /* SceneDelegate.swift */,
 				239A548429A5A9BF009E55F0 /* ViewController.swift */,
 				239A548629A5A9BF009E55F0 /* Main.storyboard */,
+				239A54B029C3E30D009E55F0 /* JournalModel.swift */,
 				239A548929A5A9C1009E55F0 /* Assets.xcassets */,
 				239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */,
 				239A548E29A5A9C1009E55F0 /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				239A548529A5A9BF009E55F0 /* ViewController.swift in Sources */,
+				239A54B129C3E30D009E55F0 /* JournalModel.swift in Sources */,
 				239A548129A5A9BF009E55F0 /* AppDelegate.swift in Sources */,
 				239A548329A5A9BF009E55F0 /* SceneDelegate.swift in Sources */,
 			);

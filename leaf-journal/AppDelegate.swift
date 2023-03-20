@@ -9,8 +9,18 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    let modelRef = JournalModel()
+    
+//    struct ContentView: View{
+//        @State private var showDetails = false
+//        var body: some View{
+//            Button{
+//                print("emoji tapped")
+//            } label: {
+//                Image("happy")
+//            }
+//        }
+//    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -33,4 +43,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 
