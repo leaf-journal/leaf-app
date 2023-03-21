@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var journalInput: UITextField!
     @IBOutlet weak var helloButton: UIButton!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var journalBackground: UILabel!
     
     var happyButtonPressed = false
     var sadButtonPressed = false
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
         sender.layer.cornerRadius = 10
         sender.layer.masksToBounds = true
     }
+    
+    
 
 
     override func viewDidLoad() {
@@ -52,6 +55,10 @@ class ViewController: UIViewController {
         let AppDelegate = UIApplication.shared.delegate as! AppDelegate
         let ModelRef = AppDelegate.modelRef
         // Do any additional setup after loading the view.
+        
+        
+        journalBackground.layer.cornerRadius = 10
+        journalBackground.layer.masksToBounds = true
     }
     
     
