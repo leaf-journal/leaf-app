@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var neutralButton: UIButton!
     @IBOutlet weak var sadButton: UIButton!
     @IBOutlet weak var journalInput: UITextField!
-    @IBOutlet weak var helloButton: UIButton!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var journalBackground: UILabel!
+    @IBOutlet weak var emotionsBackground: UILabel!
     
     var happyButtonPressed = false
     var sadButtonPressed = false
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             selectedButton?.backgroundColor = nil
         }
         selectedButton = sender
-        let customColor = UIColor(red: 0.9, green: 0.921, blue: 0.852, alpha: 1)
+        let customColor = UIColor(red: 0.961, green: 0.961, blue: 0.961, alpha: 1)
         sender.backgroundColor = customColor
         sender.layer.cornerRadius = 10
         sender.layer.masksToBounds = true
@@ -59,6 +59,11 @@ class ViewController: UIViewController {
         
         journalBackground.layer.cornerRadius = 10
         journalBackground.layer.masksToBounds = true
+        
+        
+        emotionsBackground.layer.cornerRadius = 10
+        emotionsBackground.layer.masksToBounds = true
+        
     }
     
     
