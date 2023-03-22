@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sadButton: UIButton!
     @IBOutlet weak var journalInput: UITextField!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dailyJournal: UILabel!
     @IBOutlet weak var journalBackground: UILabel!
     @IBOutlet weak var emotionsBackground: UILabel!
     
@@ -63,6 +64,7 @@ class ViewController: UIViewController {
         
         emotionsBackground.layer.cornerRadius = 10
         emotionsBackground.layer.masksToBounds = true
+        
         
     }
     
