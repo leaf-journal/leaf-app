@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		239A548129A5A9BF009E55F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A548029A5A9BF009E55F0 /* AppDelegate.swift */; };
 		239A548329A5A9BF009E55F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A548229A5A9BF009E55F0 /* SceneDelegate.swift */; };
-		239A548529A5A9BF009E55F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A548429A5A9BF009E55F0 /* ViewController.swift */; };
-		239A548829A5A9BF009E55F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239A548629A5A9BF009E55F0 /* Main.storyboard */; };
 		239A548A29A5A9C1009E55F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 239A548929A5A9C1009E55F0 /* Assets.xcassets */; };
 		239A548D29A5A9C1009E55F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */; };
 		239A549829A5A9C1009E55F0 /* leaf_journalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A549729A5A9C1009E55F0 /* leaf_journalTests.swift */; };
 		239A54A229A5A9C1009E55F0 /* leaf_journalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54A129A5A9C1009E55F0 /* leaf_journalUITests.swift */; };
 		239A54A429A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54A329A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift */; };
+		23C4E0B429CA8B1200E259EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4E0B329CA8B1200E259EC /* Main.storyboard */; };
+		23C4E0B629CA8B4D00E259EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4E0B529CA8B4D00E259EC /* ViewController.swift */; };
 		C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CCA75B29CA8351008858A3 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +40,6 @@
 		239A547D29A5A9BF009E55F0 /* leaf-journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "leaf-journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		239A548029A5A9BF009E55F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		239A548229A5A9BF009E55F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		239A548429A5A9BF009E55F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		239A548729A5A9BF009E55F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		239A548929A5A9C1009E55F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		239A548C29A5A9C1009E55F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		239A548E29A5A9C1009E55F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +48,8 @@
 		239A549D29A5A9C1009E55F0 /* leaf-journalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "leaf-journalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		239A54A129A5A9C1009E55F0 /* leaf_journalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaf_journalUITests.swift; sourceTree = "<group>"; };
 		239A54A329A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaf_journalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		23C4E0B329CA8B1200E259EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		23C4E0B529CA8B4D00E259EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Desktop/leaf-app-vibhuti-feature/leaf-journal/ViewController.swift"; sourceTree = "<group>"; };
 		C6CCA75B29CA8351008858A3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,8 +104,8 @@
 				C6CCA75B29CA8351008858A3 /* Profile.storyboard */,
 				239A548029A5A9BF009E55F0 /* AppDelegate.swift */,
 				239A548229A5A9BF009E55F0 /* SceneDelegate.swift */,
-				239A548429A5A9BF009E55F0 /* ViewController.swift */,
-				239A548629A5A9BF009E55F0 /* Main.storyboard */,
+				23C4E0B529CA8B4D00E259EC /* ViewController.swift */,
+				23C4E0B329CA8B1200E259EC /* Main.storyboard */,
 				239A548929A5A9C1009E55F0 /* Assets.xcassets */,
 				239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */,
 				239A548E29A5A9C1009E55F0 /* Info.plist */,
@@ -235,9 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				239A548D29A5A9C1009E55F0 /* LaunchScreen.storyboard in Resources */,
+				23C4E0B429CA8B1200E259EC /* Main.storyboard in Resources */,
 				239A548A29A5A9C1009E55F0 /* Assets.xcassets in Resources */,
 				C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */,
-				239A548829A5A9BF009E55F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				239A548529A5A9BF009E55F0 /* ViewController.swift in Sources */,
 				239A548129A5A9BF009E55F0 /* AppDelegate.swift in Sources */,
+				23C4E0B629CA8B4D00E259EC /* ViewController.swift in Sources */,
 				239A548329A5A9BF009E55F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		239A548629A5A9BF009E55F0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				239A548729A5A9BF009E55F0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
