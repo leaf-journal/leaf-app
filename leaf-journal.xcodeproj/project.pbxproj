@@ -14,6 +14,8 @@
 		239A549829A5A9C1009E55F0 /* leaf_journalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A549729A5A9C1009E55F0 /* leaf_journalTests.swift */; };
 		239A54A229A5A9C1009E55F0 /* leaf_journalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54A129A5A9C1009E55F0 /* leaf_journalUITests.swift */; };
 		239A54A429A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239A54A329A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift */; };
+		239D1F5F29CF535D002920F4 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D1F5E29CF535D002920F4 /* PhotoViewController.swift */; };
+		239D1F6129CF5405002920F4 /* PhotoScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D1F6029CF5405002920F4 /* PhotoScreen.storyboard */; };
 		23C4E0B429CA8B1200E259EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4E0B329CA8B1200E259EC /* Main.storyboard */; };
 		23C4E0B629CA8B4D00E259EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4E0B529CA8B4D00E259EC /* ViewController.swift */; };
 		C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CCA75B29CA8351008858A3 /* Profile.storyboard */; };
@@ -48,6 +50,8 @@
 		239A549D29A5A9C1009E55F0 /* leaf-journalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "leaf-journalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		239A54A129A5A9C1009E55F0 /* leaf_journalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaf_journalUITests.swift; sourceTree = "<group>"; };
 		239A54A329A5A9C1009E55F0 /* leaf_journalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaf_journalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		239D1F5E29CF535D002920F4 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		239D1F6029CF5405002920F4 /* PhotoScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoScreen.storyboard; sourceTree = "<group>"; };
 		23C4E0B329CA8B1200E259EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		23C4E0B529CA8B4D00E259EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Desktop/leaf-app-vibhuti-feature/leaf-journal/ViewController.swift"; sourceTree = "<group>"; };
 		C6CCA75B29CA8351008858A3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				239A548929A5A9C1009E55F0 /* Assets.xcassets */,
 				239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */,
 				239A548E29A5A9C1009E55F0 /* Info.plist */,
+				239D1F5E29CF535D002920F4 /* PhotoViewController.swift */,
+				239D1F6029CF5405002920F4 /* PhotoScreen.storyboard */,
 			);
 			path = "leaf-journal";
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 				23C4E0B429CA8B1200E259EC /* Main.storyboard in Resources */,
 				239A548A29A5A9C1009E55F0 /* Assets.xcassets in Resources */,
 				C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */,
+				239D1F6129CF5405002920F4 /* PhotoScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				239A548129A5A9BF009E55F0 /* AppDelegate.swift in Sources */,
+				239D1F5F29CF535D002920F4 /* PhotoViewController.swift in Sources */,
 				23C4E0B629CA8B4D00E259EC /* ViewController.swift in Sources */,
 				239A548329A5A9BF009E55F0 /* SceneDelegate.swift in Sources */,
 			);
