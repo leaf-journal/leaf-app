@@ -19,7 +19,6 @@
 		23C01BC529DCC113005AE009 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C01BC429DCC113005AE009 /* HomeScreen.storyboard */; };
 		23C4E0B429CA8B1200E259EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4E0B329CA8B1200E259EC /* Main.storyboard */; };
 		23C4E0B629CA8B4D00E259EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4E0B529CA8B4D00E259EC /* ViewController.swift */; };
-		8BDFF35C29D3B90C0001C231 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDFF35B29D3B90C0001C231 /* HomeScreen.storyboard */; };
 		C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CCA75B29CA8351008858A3 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		23C01BC429DCC113005AE009 /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		23C4E0B329CA8B1200E259EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		23C4E0B529CA8B4D00E259EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Desktop/leaf-app-vibhuti-feature/leaf-journal/ViewController.swift"; sourceTree = "<group>"; };
-		8BDFF35B29D3B90C0001C231 /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeScreen.storyboard; path = ../../../Desktop/HomeScreen.storyboard; sourceTree = "<group>"; };
 		C6CCA75B29CA8351008858A3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +111,6 @@
 				239A548029A5A9BF009E55F0 /* AppDelegate.swift */,
 				239A548229A5A9BF009E55F0 /* SceneDelegate.swift */,
 				23C4E0B529CA8B4D00E259EC /* ViewController.swift */,
-				8BDFF35B29D3B90C0001C231 /* HomeScreen.storyboard */,
 				23C4E0B329CA8B1200E259EC /* Main.storyboard */,
 				239A548929A5A9C1009E55F0 /* Assets.xcassets */,
 				239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */,
