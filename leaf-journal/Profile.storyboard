@@ -467,7 +467,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
                             </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUI-ea-C37">
-                                <rect key="frame" x="-1" y="768" width="393" height="49"/>
+                                <rect key="frame" x="-2" y="768" width="393" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -554,7 +554,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
                             </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrS-iX-LpF">
-                                <rect key="frame" x="0.0" y="700" width="393" height="49"/>
+                                <rect key="frame" x="0.0" y="699" width="393" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
