@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
+    
     
     //Journal Screen
     
@@ -74,7 +76,7 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "EEE MMM dd"
         
         // set the formatted date as the text of the label
-        dateLabel.text = dateFormatter.string(from: currentDate)
+        ddateLabel.text = dateFormatter.string(from: currentDate)
       
         let AppDelegate = UIApplication.shared.delegate as! AppDelegate
 //        let ModelRef = AppDelegate.modelRef
@@ -87,12 +89,17 @@ class ViewController: UIViewController {
         
         emotionsBackground.layer.cornerRadius = 10
         emotionsBackground.layer.masksToBounds = true
-        
+    
         
         let randomIndex = Int.random(in: 0..<journalPrompts.count)
         questionPrompt.text = journalPrompts[randomIndex]
         
     }
+//    let entry = Entry(journal: journalInput.text, ownerId: dateLabel.text)
+//    try! realm.write {
+//        realm.add(entry)
+//    }
+//    
     
     
 
