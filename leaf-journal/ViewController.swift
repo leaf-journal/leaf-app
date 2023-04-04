@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "EEE MMM dd"
         
         // set the formatted date as the text of the label
-        ddateLabel.text = dateFormatter.string(from: currentDate)
+        //dateLabel.text = dateFormatter.string(from: currentDate)
       
         let AppDelegate = UIApplication.shared.delegate as! AppDelegate
 //        let ModelRef = AppDelegate.modelRef

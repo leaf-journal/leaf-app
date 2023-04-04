@@ -43,7 +43,7 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         dateFormatter.dateFormat = "MM/dd/yy"
         
         // set the formatted date as the text of the label
-        dateLabel.text = dateFormatter.string(from: currentDate)
+        //dateLabel.text = dateFormatter.string(from: currentDate)
         
         addButton.layer.cornerRadius = 20
         addButton.layer.masksToBounds = true
