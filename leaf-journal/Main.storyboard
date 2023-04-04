@@ -837,7 +837,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Edit"/>
                                 <connections>
-                                    <segue destination="5oy-u2-H7F" kind="show" id="cxY-8g-EbS"/>
+                                    <segue destination="5oy-u2-H7F" kind="show" id="G1g-Zx-Fgy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -906,6 +906,9 @@
                                 <color key="tintColor" red="0.90196078430000004" green="0.92156862750000001" blue="0.85882352939999995" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <segue destination="tIL-RY-rUn" kind="show" id="vWN-Xa-7tz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6x-R8-Lzq">
                                 <rect key="frame" x="164" y="633" width="65" height="35"/>
@@ -914,6 +917,9 @@
                                 <color key="tintColor" red="0.0" green="0.16078431369999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <segue destination="tIL-RY-rUn" kind="show" id="Hml-xc-LMl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ctQ-P5-7Q7"/>
@@ -1039,7 +1045,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cWQ-D9-xch"/>
+        <segue reference="Hml-xc-LMl"/>
         <segue reference="vpG-Zq-6aq"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemGrayColor"/>
