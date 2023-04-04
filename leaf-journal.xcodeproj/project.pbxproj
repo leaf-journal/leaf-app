@@ -21,6 +21,8 @@
 		23C01BD129DCEB74005AE009 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 23C01BD029DCEB74005AE009 /* RealmSwift */; };
 		23C4E0B429CA8B1200E259EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4E0B329CA8B1200E259EC /* Main.storyboard */; };
 		8BECF6F329DCC92B003A6013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6F229DCC92B003A6013 /* ViewController.swift */; };
+		8BECF6F929DCEF58003A6013 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6F829DCEF58003A6013 /* HomeViewController.swift */; };
+		8BECF6FB29DCEF7E003A6013 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6FA29DCEF7E003A6013 /* ProfileViewController.swift */; };
 		C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CCA75B29CA8351008858A3 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		23C01BC429DCC113005AE009 /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		23C4E0B329CA8B1200E259EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8BECF6F229DCC92B003A6013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BECF6F829DCEF58003A6013 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8BECF6FA29DCEF7E003A6013 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C6CCA75B29CA8351008858A3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +118,7 @@
 				C6CCA75B29CA8351008858A3 /* Profile.storyboard */,
 				239A548029A5A9BF009E55F0 /* AppDelegate.swift */,
 				239A548229A5A9BF009E55F0 /* SceneDelegate.swift */,
+				8BECF6F829DCEF58003A6013 /* HomeViewController.swift */,
 				23C4E0B329CA8B1200E259EC /* Main.storyboard */,
 				239A548929A5A9C1009E55F0 /* Assets.xcassets */,
 				239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */,
@@ -122,6 +127,7 @@
 				239D1F5E29CF535D002920F4 /* PhotoViewController.swift */,
 				239D1F6029CF5405002920F4 /* PhotoScreen.storyboard */,
 				8BECF6F229DCC92B003A6013 /* ViewController.swift */,
+				8BECF6FA29DCEF7E003A6013 /* ProfileViewController.swift */,
 			);
 			path = "leaf-journal";
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BECF6FB29DCEF7E003A6013 /* ProfileViewController.swift in Sources */,
+				8BECF6F929DCEF58003A6013 /* HomeViewController.swift in Sources */,
 				239A548129A5A9BF009E55F0 /* AppDelegate.swift in Sources */,
 				239D1F5F29CF535D002920F4 /* PhotoViewController.swift in Sources */,
 				8BECF6F329DCC92B003A6013 /* ViewController.swift in Sources */,
