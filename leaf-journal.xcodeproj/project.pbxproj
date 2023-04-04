@@ -18,7 +18,7 @@
 		239D1F6129CF5405002920F4 /* PhotoScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239D1F6029CF5405002920F4 /* PhotoScreen.storyboard */; };
 		23C01BC529DCC113005AE009 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C01BC429DCC113005AE009 /* HomeScreen.storyboard */; };
 		23C4E0B429CA8B1200E259EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4E0B329CA8B1200E259EC /* Main.storyboard */; };
-		23C4E0B629CA8B4D00E259EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C4E0B529CA8B4D00E259EC /* ViewController.swift */; };
+		8BECF6F329DCC92B003A6013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6F229DCC92B003A6013 /* ViewController.swift */; };
 		C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CCA75B29CA8351008858A3 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		239D1F6029CF5405002920F4 /* PhotoScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoScreen.storyboard; sourceTree = "<group>"; };
 		23C01BC429DCC113005AE009 /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		23C4E0B329CA8B1200E259EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		23C4E0B529CA8B4D00E259EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Desktop/leaf-app-vibhuti-feature/leaf-journal/ViewController.swift"; sourceTree = "<group>"; };
+		8BECF6F229DCC92B003A6013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6CCA75B29CA8351008858A3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +110,6 @@
 				C6CCA75B29CA8351008858A3 /* Profile.storyboard */,
 				239A548029A5A9BF009E55F0 /* AppDelegate.swift */,
 				239A548229A5A9BF009E55F0 /* SceneDelegate.swift */,
-				23C4E0B529CA8B4D00E259EC /* ViewController.swift */,
 				23C4E0B329CA8B1200E259EC /* Main.storyboard */,
 				239A548929A5A9C1009E55F0 /* Assets.xcassets */,
 				239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */,
@@ -118,6 +117,7 @@
 				239A548E29A5A9C1009E55F0 /* Info.plist */,
 				239D1F5E29CF535D002920F4 /* PhotoViewController.swift */,
 				239D1F6029CF5405002920F4 /* PhotoScreen.storyboard */,
+				8BECF6F229DCC92B003A6013 /* ViewController.swift */,
 			);
 			path = "leaf-journal";
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 			files = (
 				239A548129A5A9BF009E55F0 /* AppDelegate.swift in Sources */,
 				239D1F5F29CF535D002920F4 /* PhotoViewController.swift in Sources */,
-				23C4E0B629CA8B4D00E259EC /* ViewController.swift in Sources */,
+				8BECF6F329DCC92B003A6013 /* ViewController.swift in Sources */,
 				239A548329A5A9BF009E55F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
