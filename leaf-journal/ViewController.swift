@@ -10,13 +10,15 @@ import RealmSwift
 
 class ViewController: UIViewController {
     
-    
+    // Open the local-only default realm
+    let realm = try! Realm()
+
     //Journal Screen
     
     @IBOutlet weak var happyButton: UIButton!
     @IBOutlet weak var neutralButton: UIButton!
     @IBOutlet weak var sadButton: UIButton!
-    @IBOutlet weak var journalInput: UITextField!
+    @IBOutlet weak var journalInput: UITextView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var dailyJournal: UILabel!
     @IBOutlet weak var journalBackground: UILabel!
@@ -76,7 +78,7 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "EEE MMM dd"
         
         // set the formatted date as the text of the label
-        //dateLabel.text = dateFormatter.string(from: currentDate)
+       // dateLabel.text = dateFormatter.string(from: currentDate)
       
         let AppDelegate = UIApplication.shared.delegate as! AppDelegate
 //        let ModelRef = AppDelegate.modelRef
@@ -94,12 +96,16 @@ class ViewController: UIViewController {
         let randomIndex = Int.random(in: 0..<journalPrompts.count)
         questionPrompt.text = journalPrompts[randomIndex]
         
+        
+        
+        let entry = Entry(journal: journalInput.text ?? "", dayCurrent: dateLabel.text ?? "")
+        try! realm.write {
+            realm.add(entry)
+        }
+        
     }
-//    let entry = Entry(journal: journalInput.text, ownerId: dateLabel.text)
-//    try! realm.write {
-//        realm.add(entry)
-//    }
-//    
+
+  
     
     
 
