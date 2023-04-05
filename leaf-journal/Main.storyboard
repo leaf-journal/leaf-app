@@ -77,16 +77,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-rO-YaT">
-                                <rect key="frame" x="266" y="92" width="109" height="26.333333333333329"/>
+                                <rect key="frame" x="271" y="74" width="99" height="26.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26.333333333333329" id="4Ih-3c-40Q"/>
-                                    <constraint firstAttribute="width" constant="109" id="Jaj-NW-kpm"/>
+                                    <constraint firstAttribute="width" constant="99" id="Jaj-NW-kpm"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.16078431372549018" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="MalayalamSangamMN-Bold"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="15" name="MalayalamSangamMN-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -168,6 +169,26 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Utz-VC-oVd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrp-MM-Ahv">
+                                <rect key="frame" x="290" y="697" width="67" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="submit">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.16078431372549018" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="MalayalamSangamMN-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foQ-Yw-CEt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -175,7 +196,7 @@
                             <constraint firstItem="lbp-bY-HNf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-58" id="0Kg-ry-SL5"/>
                             <constraint firstItem="Lbj-cn-8uM" firstAttribute="leading" secondItem="8bi-Ls-wkX" secondAttribute="trailing" constant="16" id="1lZ-HY-Xue"/>
                             <constraint firstItem="nQ4-oj-JQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="9EG-iV-SY2"/>
-                            <constraint firstItem="TSd-rO-YaT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9qW-cP-kJZ"/>
+                            <constraint firstItem="TSd-rO-YaT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-5" id="9qW-cP-kJZ"/>
                             <constraint firstItem="lbp-bY-HNf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-30" id="Cwf-gn-Arp"/>
                             <constraint firstItem="546-MD-Xfm" firstAttribute="top" secondItem="7Wd-w4-S6h" secondAttribute="bottom" constant="8" id="D2P-Xt-F6N"/>
                             <constraint firstItem="lbp-bY-HNf" firstAttribute="leading" secondItem="Ucu-tn-KV5" secondAttribute="leading" constant="-30" id="F00-9w-Zqs"/>
@@ -198,7 +219,7 @@
                             <constraint firstItem="7Wd-w4-S6h" firstAttribute="top" secondItem="Lbj-cn-8uM" secondAttribute="bottom" constant="14" id="bnb-La-NCA"/>
                             <constraint firstItem="7Wd-w4-S6h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fEW-DM-6iR"/>
                             <constraint firstItem="1My-fS-0q2" firstAttribute="centerX" secondItem="tyJ-sh-32s" secondAttribute="centerX" id="gYW-S1-L8q"/>
-                            <constraint firstItem="TSd-rO-YaT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="hob-h4-ned"/>
+                            <constraint firstItem="TSd-rO-YaT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-17" id="hob-h4-ned"/>
                             <constraint firstItem="nQ4-oj-JQA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="53" id="k20-h5-onU"/>
                             <constraint firstItem="8bi-Ls-wkX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="nBg-hL-OdO"/>
                             <constraint firstItem="nQ4-oj-JQA" firstAttribute="centerY" secondItem="546-MD-Xfm" secondAttribute="centerY" constant="-1" id="pqv-l7-74W"/>
@@ -221,6 +242,7 @@
                         <outlet property="neutralButton" destination="Lbj-cn-8uM" id="nxO-Q5-hBG"/>
                         <outlet property="questionPrompt" destination="7Wd-w4-S6h" id="wnR-vk-ZNL"/>
                         <outlet property="sadButton" destination="6jR-df-wbV" id="wpe-pn-nXY"/>
+                        <outlet property="submitButton" destination="vrp-MM-Ahv" id="hzq-p9-w4E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -377,7 +399,7 @@
             <objects>
                 <viewController id="tIL-RY-rUn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQt-e7-QpM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Pd-BL-lLO">
@@ -849,7 +871,7 @@
             <objects>
                 <viewController id="5oy-u2-H7F" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ed9-Nz-BqC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WL4-XA-IbU">
@@ -1098,8 +1120,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G1g-Zx-Fgy"/>
-        <segue reference="Hml-xc-LMl"/>
+        <segue reference="cWQ-D9-xch"/>
         <segue reference="vpG-Zq-6aq"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemGrayColor"/>

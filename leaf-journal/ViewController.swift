@@ -10,7 +10,7 @@ import RealmSwift
 import Foundation
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextViewDelegate {
     
     // Open the local-only default realm
     let realm = try! Realm()
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var happyButton: UIButton!
     @IBOutlet weak var neutralButton: UIButton!
     @IBOutlet weak var sadButton: UIButton!
+    @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var journalInput: UITextView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var dailyJournal: UILabel!
@@ -54,6 +55,31 @@ class ViewController: UIViewController {
         sender.layer.masksToBounds = true
     }
     
+    @IBAction func submitPressed(_ sender: UIButton) {
+        let formatDate = DateFormatter()
+        formatDate.dateFormat = "MM/dd/yy"
+
+        let foundationDate = Foundation.Date()
+        let dateString = formatDate.string(from: foundationDate)
+        
+        
+        //Create Entry
+        let entry = Entry(journal: journalInput.text ?? "", dayCurrent: dateString ?? "")
+        try! realm.write {
+            realm.add(entry)
+        }
+        
+        // Create a new dates
+        let date = Date(entry: entry)
+
+        // Persist the date in Realm
+        try! realm.write {
+            realm.add(date)
+        }
+
+        
+    }
+    
     
 
     @IBAction func profilePressed(_ sender: UIButton) {
@@ -68,6 +94,14 @@ class ViewController: UIViewController {
         sender.layer.masksToBounds = true
     }
     
+    @objc func dismissKeyboard() {
+          view.endEditing(true)
+    }
+      
+    func textViewDidEndEditing(_ textView: UITextView) {
+      textView.resignFirstResponder()
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,12 +132,13 @@ class ViewController: UIViewController {
         let randomIndex = Int.random(in: 0..<journalPrompts.count)
         questionPrompt.text = journalPrompts[randomIndex]
         
-        
-        
-        let entry = Entry(journal: journalInput.text ?? "", dayCurrent: dateLabel.text ?? "")
-        try! realm.write {
-            realm.add(entry)
-        }
+        // Add tap gesture recognizer to dismiss keyboard
+         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+         view.addGestureRecognizer(tapGesture)
+         
+         // Set text view delegate to handle keyboard events
+         journalInput.delegate = self
+    
         
     }
 
