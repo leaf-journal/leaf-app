@@ -947,6 +947,7 @@
                                     <color key="baseBackgroundColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="JournalButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="TzF-bk-xWA"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="vpG-Zq-6aq"/>
                                 </connections>
                             </button>
@@ -1030,6 +1031,7 @@
                                     <color key="baseBackgroundColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="MemoriesButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="Dzq-aQ-lyx"/>
                                     <segue destination="tIL-RY-rUn" kind="show" id="cWQ-D9-xch"/>
                                 </connections>
                             </button>
@@ -1040,12 +1042,13 @@
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="mB8-CR-ZMr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q67-eA-08a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="rj9-Go-cW9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1295.2" y="-113.05418719211823"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hml-xc-LMl"/>
+        <segue reference="cWQ-D9-xch"/>
         <segue reference="vpG-Zq-6aq"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemGrayColor"/>

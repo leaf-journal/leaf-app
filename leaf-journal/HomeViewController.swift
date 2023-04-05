@@ -5,16 +5,14 @@
 //  Created by Faiza Rahman on 4/4/23.
 //
 
-import SwiftUI
+import UIKit
 
-struct HomeViewController: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class HomeViewController: UIViewController {
+    @IBOutlet weak var MemoriesButton: UIButton!
+    @IBOutlet weak var JournalButton: UIButton!
+
+    @IBAction func JournalButton(_ sender: UIButton) {
     }
-}
-
-struct HomeViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeViewController()
+    @IBAction func MemoriesButton(_ sender: UIButton) {
     }
 }
