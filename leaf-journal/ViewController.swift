@@ -7,6 +7,8 @@
 
 import UIKit
 import RealmSwift
+import Foundation
+
 
 class ViewController: UIViewController {
     
@@ -71,14 +73,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // get the current date
-        let currentDate = Date()
+        let currentDate = Foundation.Date()
         
         // create a date formatter
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEE MMM dd"
         
         // set the formatted date as the text of the label
-       // dateLabel.text = dateFormatter.string(from: currentDate)
+        dateLabel.text = dateFormatter.string(from: currentDate)
       
         let AppDelegate = UIApplication.shared.delegate as! AppDelegate
 //        let ModelRef = AppDelegate.modelRef
