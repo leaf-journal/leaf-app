@@ -20,6 +20,7 @@
 		23C01BCF29DCEB74005AE009 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 23C01BCE29DCEB74005AE009 /* Realm */; };
 		23C01BD129DCEB74005AE009 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 23C01BD029DCEB74005AE009 /* RealmSwift */; };
 		23C01BD329DCEBB9005AE009 /* RealmFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C01BD229DCEBB9005AE009 /* RealmFile.swift */; };
+		23C01BDB29E0499C005AE009 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C01BDA29E0499C005AE009 /* DateViewController.swift */; };
 		23C4E0B429CA8B1200E259EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C4E0B329CA8B1200E259EC /* Main.storyboard */; };
 		8BECF6F329DCC92B003A6013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6F229DCC92B003A6013 /* ViewController.swift */; };
 		8BECF6F929DCEF58003A6013 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6F829DCEF58003A6013 /* HomeViewController.swift */; };
@@ -64,6 +65,7 @@
 		239D1F6029CF5405002920F4 /* PhotoScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoScreen.storyboard; sourceTree = "<group>"; };
 		23C01BC429DCC113005AE009 /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		23C01BD229DCEBB9005AE009 /* RealmFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFile.swift; sourceTree = "<group>"; };
+		23C01BDA29E0499C005AE009 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		23C4E0B329CA8B1200E259EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8BECF6F229DCC92B003A6013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BECF6F829DCEF58003A6013 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				23C01BD229DCEBB9005AE009 /* RealmFile.swift */,
 				8BECF6FA29DCEF7E003A6013 /* ProfileViewController.swift */,
 				C602150E29DFA02D00976F82 /* CalendarViewController.swift */,
+				23C01BDA29E0499C005AE009 /* DateViewController.swift */,
 				C602151029DFA8B100976F82 /* DetailedViewController.swift */,
 			);
 			path = "leaf-journal";
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C01BDB29E0499C005AE009 /* DateViewController.swift in Sources */,
 				C602150F29DFA02D00976F82 /* CalendarViewController.swift in Sources */,
 				8BECF6FB29DCEF7E003A6013 /* ProfileViewController.swift in Sources */,
 				8BECF6F929DCEF58003A6013 /* HomeViewController.swift in Sources */,

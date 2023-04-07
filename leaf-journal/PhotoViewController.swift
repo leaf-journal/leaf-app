@@ -8,13 +8,39 @@
 
 import UIKit
 import Foundation
+import RealmSwift
 
 
 class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    let realm = try! Realm()
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionBackground: UILabel!
+    @IBOutlet weak var photoCaption: UITextView!
+    @IBOutlet weak var submitButton: UIButton!
+    
+    
+    @IBAction func submitPressed(_ sender: UIButton) {
+        let formatDate = DateFormatter()
+        formatDate.dateFormat = "MM/dd/yy"
+
+        let foundationDate = Foundation.Date()
+        let dateString = formatDate.string(from: foundationDate)
+        
+        let entries = realm.objects(Entry.self).filter("dayCurrent = %@", dateString)
+
+        for entry in entries {
+            try! realm.write {
+                entry.photoCaption = photoCaption.text
+            }
+        }
+        
+    }
+    
+
     
     @IBAction func uploadButtonTapped(_ sender: UIButton) {
         let imagePicker = UIImagePickerController()
@@ -32,7 +58,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
 
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // get the current date
@@ -47,7 +72,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         addButton.layer.cornerRadius = 20
         addButton.layer.masksToBounds = true
-        
         
         
         captionBackground.layer.cornerRadius = 10

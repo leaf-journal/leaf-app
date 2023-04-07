@@ -64,13 +64,13 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         
         //Create Entry
-        let entry = Entry(journal: journalInput.text ?? "", dayCurrent: dateString ?? "")
+        let entry = Entry(journal: journalInput.text ?? "No entry", dayCurrent: dateString ?? "No date", photoCaption: "No caption")
         try! realm.write {
             realm.add(entry)
         }
         
         // Create a new dates
-        let date = Date(entry: entry)
+        let date = Date(entry: entry, date: dateString ?? "No date")
 
         // Persist the date in Realm
         try! realm.write {

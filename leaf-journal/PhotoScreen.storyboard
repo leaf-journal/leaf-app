@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="PhotoViewController" customModule="leaf_journal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,11 +76,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hii" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-di-Hec">
-                                <rect key="frame" x="45" y="659" width="284" height="64"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIq-K9-xmb">
                                 <rect key="frame" x="175.66666666666666" y="172" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -103,32 +98,65 @@
                                     </attributedString>
                                 </buttonConfiguration>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="hello" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QDd-Kb-Ye4">
+                                <rect key="frame" x="28" y="668" width="318" height="77"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDz-ky-lVQ">
+                                <rect key="frame" x="309" y="756" width="64" height="31"/>
+                                <color key="tintColor" red="0.0" green="0.16078431369999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="submit">
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="MalayalamSangamMN-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5GQ-tr-Lmv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IAZ-r2-KnU" firstAttribute="top" secondItem="UIq-K9-xmb" secondAttribute="bottom" constant="8" id="0Kd-h1-BWA"/>
-                            <constraint firstItem="IAZ-r2-KnU" firstAttribute="centerX" secondItem="Wjd-di-Hec" secondAttribute="centerX" constant="9.5" id="2XY-wP-X8g"/>
                             <constraint firstItem="OeD-5O-Scg" firstAttribute="centerX" secondItem="o34-Qs-pxq" secondAttribute="centerX" id="6Ws-cM-ue3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QDd-Kb-Ye4" secondAttribute="trailing" constant="47" id="Lhu-Iu-fOa"/>
                             <constraint firstItem="IAZ-r2-KnU" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="201" id="Lla-DQ-C5c"/>
                             <constraint firstItem="OeD-5O-Scg" firstAttribute="top" secondItem="AjR-fC-KXS" secondAttribute="bottom" constant="8" id="M3u-4f-MZ1"/>
-                            <constraint firstItem="OeD-5O-Scg" firstAttribute="centerX" secondItem="Wjd-di-Hec" secondAttribute="centerX" id="NOM-Sp-ODr"/>
                             <constraint firstItem="AjR-fC-KXS" firstAttribute="top" secondItem="IAZ-r2-KnU" secondAttribute="bottom" constant="8" id="P98-wu-IXs"/>
                             <constraint firstItem="IAZ-r2-KnU" firstAttribute="centerX" secondItem="AjR-fC-KXS" secondAttribute="centerX" id="ThD-s7-2Nx"/>
+                            <constraint firstItem="QDd-Kb-Ye4" firstAttribute="centerX" secondItem="OeD-5O-Scg" secondAttribute="centerX" id="VzG-wN-F6u"/>
                             <constraint firstItem="IAZ-r2-KnU" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="WGa-tp-Pe2"/>
                             <constraint firstItem="cpJ-lS-pzY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="-10" id="WpQ-sL-jTM"/>
+                            <constraint firstItem="QDd-Kb-Ye4" firstAttribute="centerY" secondItem="OeD-5O-Scg" secondAttribute="centerY" id="ZUX-LN-0dV"/>
+                            <constraint firstItem="QDd-Kb-Ye4" firstAttribute="top" secondItem="AjR-fC-KXS" secondAttribute="bottom" constant="17" id="a7m-Bf-nkI"/>
                             <constraint firstItem="frM-9E-Zpn" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="aQH-C5-c0H"/>
+                            <constraint firstItem="QDd-Kb-Ye4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="ahx-Ya-Af7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OeD-5O-Scg" secondAttribute="bottom" constant="64" id="c0a-ga-OqM"/>
                             <constraint firstItem="frM-9E-Zpn" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="dAN-6W-GmN"/>
                             <constraint firstItem="frM-9E-Zpn" firstAttribute="top" secondItem="cpJ-lS-pzY" secondAttribute="top" constant="82" id="dnh-P8-fYv"/>
                             <constraint firstItem="OeD-5O-Scg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="22" id="k7z-Wa-E3F"/>
+                            <constraint firstItem="HDz-ky-lVQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="309" id="oYu-gg-c2Y"/>
+                            <constraint firstItem="HDz-ky-lVQ" firstAttribute="top" secondItem="OeD-5O-Scg" secondAttribute="bottom" constant="2" id="pUg-2N-nRC"/>
                             <constraint firstItem="IAZ-r2-KnU" firstAttribute="centerX" secondItem="UIq-K9-xmb" secondAttribute="centerX" id="qEN-ds-Hnw"/>
                             <constraint firstItem="OeD-5O-Scg" firstAttribute="trailing" secondItem="cpJ-lS-pzY" secondAttribute="trailing" constant="-18" id="qrW-z4-kdF"/>
                             <constraint firstItem="IAZ-r2-KnU" firstAttribute="centerX" secondItem="frM-9E-Zpn" secondAttribute="centerX" id="rfm-I1-zYi"/>
                             <constraint firstItem="cpJ-lS-pzY" firstAttribute="leading" secondItem="o34-Qs-pxq" secondAttribute="trailing" constant="44" id="sPE-U0-ezE"/>
-                            <constraint firstItem="OeD-5O-Scg" firstAttribute="top" secondItem="Wjd-di-Hec" secondAttribute="top" id="yD4-1a-66h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoCaption" destination="QDd-Kb-Ye4" id="kwv-DR-fHp"/>
+                        <outlet property="submitButton" destination="HDz-ky-lVQ" id="Kns-dt-wzq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,6 +167,9 @@
         <image name="green-blurb" width="350" height="263"/>
         <image name="leaf" width="158" height="204"/>
         <image name="side-blurb" width="143" height="458"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
