@@ -22,19 +22,10 @@ class DateViewController: UIViewController {
         
         let specificDate = "04/07/23"
         dateLabel.text = specificDate
-        let entries = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate)
-
-        for entry in entries {
-            journalEntry.text = entry.journal
-            photoCaption.text = entry.photoCaption
-        }
+        let entry = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate).first
         
-        
-//        if let entry = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate).first?{
-//            journalEntry.text = entry.journal
-//        }else{
-//            journalEntry.text = "Could not find"
-//        }
+        journalEntry.text = entry?.journal
+        photoCaption.text = entry?.photoCaption
         
 
         

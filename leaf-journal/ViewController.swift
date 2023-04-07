@@ -62,21 +62,27 @@ class ViewController: UIViewController, UITextViewDelegate {
         let foundationDate = Foundation.Date()
         let dateString = formatDate.string(from: foundationDate)
         
-        
-        //Create Entry
-        let entry = Entry(journal: journalInput.text ?? "No entry", dayCurrent: dateString ?? "No date", photoCaption: "No caption")
-        try! realm.write {
-            realm.add(entry)
+        if let existingEntry = realm.objects(Date.self).filter("date = %@", dateString).first?.entry {
+            
+            // update alr existing entry
+            try! realm.write {
+                existingEntry.journal = journalInput.text
+                print(existingEntry.journal)
+             }
+        } else {
+    
+            //Create Entry
+            let entry = Entry(journal: journalInput.text ?? "No entry", dayCurrent: dateString ?? "No date", photoCaption: "No caption")
+            try! realm.write {
+                realm.add(entry)
+            }
+            
+            //Create date
+            let date = Date(entry: entry, date: dateString ?? "No date")
+            try! realm.write {
+                realm.add(date)
+            }
         }
-        
-        // Create a new dates
-        let date = Date(entry: entry, date: dateString ?? "No date")
-
-        // Persist the date in Realm
-        try! realm.write {
-            realm.add(date)
-        }
-
         
     }
     
