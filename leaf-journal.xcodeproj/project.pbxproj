@@ -24,6 +24,8 @@
 		8BECF6F329DCC92B003A6013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6F229DCC92B003A6013 /* ViewController.swift */; };
 		8BECF6F929DCEF58003A6013 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6F829DCEF58003A6013 /* HomeViewController.swift */; };
 		8BECF6FB29DCEF7E003A6013 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BECF6FA29DCEF7E003A6013 /* ProfileViewController.swift */; };
+		C602150D29DF9F7200976F82 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = C602150C29DF9F7200976F82 /* FSCalendar */; };
+		C644F51929DF8F1800C5EC9E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C644F51829DF8F1800C5EC9E /* Podfile */; };
 		C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CCA75B29CA8351008858A3 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,7 @@
 		8BECF6F229DCC92B003A6013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BECF6F829DCEF58003A6013 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8BECF6FA29DCEF7E003A6013 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C644F51829DF8F1800C5EC9E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		C6CCA75B29CA8351008858A3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C01BD129DCEB74005AE009 /* RealmSwift in Frameworks */,
+				C602150D29DF9F7200976F82 /* FSCalendar in Frameworks */,
 				23C01BCF29DCEB74005AE009 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +126,7 @@
 				239A548229A5A9BF009E55F0 /* SceneDelegate.swift */,
 				8BECF6F829DCEF58003A6013 /* HomeViewController.swift */,
 				23C4E0B329CA8B1200E259EC /* Main.storyboard */,
+				C644F51829DF8F1800C5EC9E /* Podfile */,
 				239A548929A5A9C1009E55F0 /* Assets.xcassets */,
 				239A548B29A5A9C1009E55F0 /* LaunchScreen.storyboard */,
 				23C01BC429DCC113005AE009 /* HomeScreen.storyboard */,
@@ -171,6 +176,7 @@
 			packageProductDependencies = (
 				23C01BCE29DCEB74005AE009 /* Realm */,
 				23C01BD029DCEB74005AE009 /* RealmSwift */,
+				C602150C29DF9F7200976F82 /* FSCalendar */,
 			);
 			productName = "leaf-journal";
 			productReference = 239A547D29A5A9BF009E55F0 /* leaf-journal.app */;
@@ -246,6 +252,7 @@
 			mainGroup = 239A547429A5A9BF009E55F0;
 			packageReferences = (
 				23C01BCD29DCEB74005AE009 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				C602150B29DF9F7200976F82 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = 239A547E29A5A9BF009E55F0 /* Products */;
 			projectDirPath = "";
@@ -268,6 +275,7 @@
 				239A548A29A5A9C1009E55F0 /* Assets.xcassets in Resources */,
 				23C01BC529DCC113005AE009 /* HomeScreen.storyboard in Resources */,
 				C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */,
+				C644F51929DF8F1800C5EC9E /* Podfile in Resources */,
 				239D1F6129CF5405002920F4 /* PhotoScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,6 +649,14 @@
 				minimumVersion = 10.38.0;
 			};
 		};
+		C602150B29DF9F7200976F82 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -653,6 +669,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 23C01BCD29DCEB74005AE009 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		C602150C29DF9F7200976F82 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C602150B29DF9F7200976F82 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
