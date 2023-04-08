@@ -23,11 +23,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     migration.enumerateObjects(ofType: Date.className()) { oldObject, newObject in
                         newObject!["date"] = ""
                     }
+
+//                    // Add 'imagePath' property to Entry class
+//                    migration.enumerateObjects(ofType: Entry.className()) { oldObject, newObject in
+//                      
+//                        oldObject!["imagePath"] = ""
+//                        newObject!["imagePath"] = ""
+//                    }
                 }
         })
+   
         Realm.Configuration.defaultConfiguration = config
-        // Override point for customization after application launch.
         let realm = try! Realm()
+
+        
+
         return true
     }
 

@@ -15,6 +15,8 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     let realm = try! Realm()
     
+    let formatDate = DateFormatter()
+
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var dateLabel: UILabel!
@@ -24,18 +26,14 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     
     @IBAction func submitPressed(_ sender: UIButton) {
-        let formatDate = DateFormatter()
-        formatDate.dateFormat = "MM/dd/yy"
-
+        formatDate.dateFormat = "MM-dd-yy"
         let foundationDate = Foundation.Date()
         let dateString = formatDate.string(from: foundationDate)
-        
-        let entries = realm.objects(Entry.self).filter("dayCurrent = %@", dateString)
-
-        for entry in entries {
-            try! realm.write {
-                entry.photoCaption = photoCaption.text
-            }
+ 
+        let entry = realm.objects(Entry.self).filter("dayCurrent = %@", dateString).first
+    
+        try! realm.write {
+            entry?.photoCaption = photoCaption.text
         }
         
     }
@@ -50,13 +48,39 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             imageView.contentMode = .scaleAspectFit
             imageView.image = pickedImage
+            
         }
-        dismiss(animated: true, completion: nil)
-    }
+        
+        //Save the image to the documents of app
+        
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+            return
+        }
+        
+        
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        
+        formatDate.dateFormat = "MM-dd-yy"
+        let foundationDate = Foundation.Date()
+        let dateString = formatDate.string(from: foundationDate)
 
+        let imgName = dateString + ".jpg"
+        print(imgName)
+        let fileURL = documentsDirectory.appendingPathComponent(imgName)
+        guard let imageData = image.jpegData(compressionQuality: 1.0) else {
+             return
+        }
+        try? imageData.write(to: fileURL)
+        print("wrote to file")
+        dismiss(animated: true, completion: nil)
+       
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

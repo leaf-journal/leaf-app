@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func submitPressed(_ sender: UIButton) {
         let formatDate = DateFormatter()
-        formatDate.dateFormat = "MM/dd/yy"
+        formatDate.dateFormat = "MM-dd-yy"
 
         let foundationDate = Foundation.Date()
         let dateString = formatDate.string(from: foundationDate)

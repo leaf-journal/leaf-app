@@ -1120,10 +1120,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Text here: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-XC-hrY">
-                                <rect key="frame" x="16" y="182.00000000000003" width="343" height="289.66666666666674"/>
+                                <rect key="frame" x="10" y="147" width="349" height="265"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="363" id="qrh-gE-Szz"/>
+                                    <constraint firstAttribute="height" constant="265" id="qrh-gE-Szz"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1141,50 +1141,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Photo Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M02-IT-kQQ">
-                                <rect key="frame" x="132" y="521.66666666666663" width="151" height="20.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="photo cap: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U1j-0b-3yo">
-                                <rect key="frame" x="24" y="550" width="335" height="105"/>
+                                <rect key="frame" x="24" y="624" width="335" height="31"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="tau-rE-h7i"/>
+                                    <constraint firstAttribute="height" constant="31" id="tau-rE-h7i"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-Q7-fmn">
+                                <rect key="frame" x="35" y="420" width="292" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8w6-hT-z8h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="leading" secondItem="fg1-EQ-jYf" secondAttribute="leadingMargin" id="1so-wR-vVK"/>
+                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="leading" secondItem="fg1-EQ-jYf" secondAttribute="leadingMargin" constant="-6" id="1so-wR-vVK"/>
                             <constraint firstItem="8w6-hT-z8h" firstAttribute="bottom" secondItem="U1j-0b-3yo" secondAttribute="bottom" constant="74" id="6TX-Do-izj"/>
-                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="top" secondItem="2xk-zf-CJD" secondAttribute="bottom" constant="43" id="FSS-jV-I8m"/>
+                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="top" secondItem="2xk-zf-CJD" secondAttribute="bottom" constant="8" id="FSS-jV-I8m"/>
                             <constraint firstItem="Kmn-XC-hrY" firstAttribute="trailing" secondItem="U1j-0b-3yo" secondAttribute="trailing" id="Ism-8f-b7e"/>
-                            <constraint firstItem="U1j-0b-3yo" firstAttribute="top" secondItem="M02-IT-kQQ" secondAttribute="bottom" constant="8" id="V39-X4-m1u"/>
-                            <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="Kmn-XC-hrY" secondAttribute="centerX" id="anS-5f-wDV"/>
+                            <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="Kmn-XC-hrY" secondAttribute="centerX" constant="3" id="anS-5f-wDV"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="fg1-EQ-jYf" secondAttribute="centerX" id="dop-rT-9bt"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="top" secondItem="8w6-hT-z8h" secondAttribute="top" constant="22" id="ene-fK-gLM"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="2xk-zf-CJD" secondAttribute="centerX" id="gXg-yX-88h"/>
                             <constraint firstItem="2xk-zf-CJD" firstAttribute="top" secondItem="7gL-SF-Ynm" secondAttribute="bottom" constant="28" id="tvH-eQ-LyU"/>
                             <constraint firstItem="U1j-0b-3yo" firstAttribute="leading" secondItem="8w6-hT-z8h" secondAttribute="leading" constant="24" id="wRK-FJ-hkk"/>
-                            <constraint firstItem="M02-IT-kQQ" firstAttribute="top" secondItem="Kmn-XC-hrY" secondAttribute="bottom" constant="50" id="wgZ-eb-3xQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="iab-67-iqr"/>
                     <connections>
                         <outlet property="dateLabel" destination="2xk-zf-CJD" id="zSQ-0L-SzV"/>
+                        <outlet property="imageJournal" destination="Ma7-Q7-fmn" id="Os4-gE-EHj"/>
                         <outlet property="journalEntry" destination="Kmn-XC-hrY" id="5U1-iR-b4z"/>
                         <outlet property="photoCaption" destination="U1j-0b-3yo" id="wfN-Jd-eRj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="988-Wm-nFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2001" y="-92"/>
+            <point key="canvasLocation" x="-2002.4000000000001" y="-92.364532019704441"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
