@@ -11,7 +11,7 @@ import Foundation
 import RealmSwift
 
 
-class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PhotoViewController: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     
     let realm = try! Realm()
     
@@ -23,6 +23,7 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet weak var captionBackground: UILabel!
     @IBOutlet weak var photoCaption: UITextView!
     @IBOutlet weak var submitButton: UIButton!
+    
     
     
     @IBAction func submitPressed(_ sender: UIButton) {
@@ -100,6 +101,20 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         captionBackground.layer.cornerRadius = 10
         captionBackground.layer.masksToBounds = true
         
+        photoCaption.delegate = self
+        
       
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           photoCaption.resignFirstResponder()
+           return true
+    }
+       
+   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       photoCaption.resignFirstResponder()
+   }
+
+    
+    
 }

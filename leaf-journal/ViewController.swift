@@ -100,14 +100,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         sender.layer.masksToBounds = true
     }
     
-    @objc func dismissKeyboard() {
-        journalInput.endEditing(true)
-    }
-      
-    func textViewDidEndEditing(_ textView: UITextView) {
-        journalInput.resignFirstResponder()
-    }
-    
 
 
     override func viewDidLoad() {
@@ -138,16 +130,25 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         let randomIndex = Int.random(in: 0..<journalPrompts.count)
         questionPrompt.text = journalPrompts[randomIndex]
-        /***
-        // Add tap gesture recognizer to dismiss keyboard
-         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-         journalInput.addGestureRecognizer(tapGesture)
-        */
+    
+
          // Set text view delegate to handle keyboard events
          journalInput.delegate = self
     
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           journalInput.resignFirstResponder()
+           return true
+       }
+       
+   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       journalInput.resignFirstResponder()
+   }
+
+    
+
 
   
     
