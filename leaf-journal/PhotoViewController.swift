@@ -37,7 +37,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         }
         
     }
-    
 
     
     @IBAction func uploadButtonTapped(_ sender: UIButton) {

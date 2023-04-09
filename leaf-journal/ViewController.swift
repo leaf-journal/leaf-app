@@ -101,12 +101,13 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
     @objc func dismissKeyboard() {
-          view.endEditing(true)
+        journalInput.endEditing(true)
     }
       
     func textViewDidEndEditing(_ textView: UITextView) {
-      textView.resignFirstResponder()
+        journalInput.resignFirstResponder()
     }
+    
 
 
     override func viewDidLoad() {
@@ -140,7 +141,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         // Add tap gesture recognizer to dismiss keyboard
          let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-         view.addGestureRecognizer(tapGesture)
+         journalInput.addGestureRecognizer(tapGesture)
          
          // Set text view delegate to handle keyboard events
          journalInput.delegate = self
