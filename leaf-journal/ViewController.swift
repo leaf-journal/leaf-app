@@ -138,11 +138,11 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         let randomIndex = Int.random(in: 0..<journalPrompts.count)
         questionPrompt.text = journalPrompts[randomIndex]
-        
+        /***
         // Add tap gesture recognizer to dismiss keyboard
          let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
          journalInput.addGestureRecognizer(tapGesture)
-         
+        */
          // Set text view delegate to handle keyboard events
          journalInput.delegate = self
     
