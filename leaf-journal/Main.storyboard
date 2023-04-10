@@ -23,6 +23,7 @@
                         <segue destination="Vjc-zA-4eF" kind="relationship" relationship="viewControllers" id="Jjg-ya-YXQ"/>
                         <segue destination="qj2-Wb-dfQ" kind="relationship" relationship="viewControllers" id="7HI-oX-U8j"/>
                         <segue destination="Nx6-D8-0BR" kind="relationship" relationship="viewControllers" id="VPM-ah-OQf"/>
+                        <segue destination="Qrb-Xo-QFR" kind="relationship" relationship="viewControllers" id="eDh-ah-5OA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9F-aE-qsL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -386,7 +387,7 @@
             </objects>
             <point key="canvasLocation" x="1631.2" y="-113.05418719211823"/>
         </scene>
-        <!--Item-->
+        <!--Memories-->
         <scene sceneID="y2I-9x-gDd">
             <objects>
                 <viewController id="Qrb-Xo-QFR" customClass="Memories" customModule="leaf_journal" customModuleProvider="target" sceneMemberID="viewController">
@@ -394,11 +395,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-eX-IgF">
-                                <rect key="frame" x="0.0" y="47" width="375" height="682"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-eX-IgF">
+                                <rect key="frame" x="0.0" y="122" width="375" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="89" id="1Hu-77-NjZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="89" id="1Hu-77-NjZ" customClass="MemoriesTableViewCell" customModule="leaf_journal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="375" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Hu-77-NjZ" id="fze-w7-LKs">
@@ -411,37 +413,46 @@
                                                         <constraint firstAttribute="width" constant="150" id="SbD-dg-x2s"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-BI-Qac">
-                                                    <rect key="frame" x="170" y="21" width="63" height="47"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZN-BI-Qac">
+                                                    <rect key="frame" x="170" y="21" width="185" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="QZN-BI-Qac" secondAttribute="trailing" constant="122" id="3c0-dO-i02"/>
                                                 <constraint firstAttribute="bottom" secondItem="yiv-Nl-Sa8" secondAttribute="bottom" constant="10" id="QdG-3r-UDx"/>
-                                                <constraint firstItem="QZN-BI-Qac" firstAttribute="leading" secondItem="yiv-Nl-Sa8" secondAttribute="trailing" constant="10" id="c6V-2K-hbd"/>
                                                 <constraint firstItem="yiv-Nl-Sa8" firstAttribute="leading" secondItem="fze-w7-LKs" secondAttribute="leading" constant="10" id="gcX-9J-Go9"/>
                                                 <constraint firstItem="yiv-Nl-Sa8" firstAttribute="top" secondItem="fze-w7-LKs" secondAttribute="top" constant="10" id="ktn-5k-vu3"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="QZN-BI-Qac" secondAttribute="bottom" constant="10" id="mQA-1z-pUL"/>
-                                                <constraint firstItem="QZN-BI-Qac" firstAttribute="top" secondItem="fze-w7-LKs" secondAttribute="topMargin" constant="10" id="nfr-bg-Qb3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="yiv-Nl-Sa8" id="ZzS-zY-dLd"/>
+                                            <outlet property="lable" destination="QZN-BI-Qac" id="ug5-Ns-g4t"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzl-vN-nqf">
+                                <rect key="frame" x="98" y="69" width="178" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="My Memories">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.16078431372549018" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="29" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f1g-GZ-YFh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Trn-eX-IgF" firstAttribute="top" secondItem="f1g-GZ-YFh" secondAttribute="top" id="A40-d6-RRb"/>
-                            <constraint firstItem="f1g-GZ-YFh" firstAttribute="bottom" secondItem="Trn-eX-IgF" secondAttribute="bottom" id="QBd-dc-EgS"/>
-                            <constraint firstItem="Trn-eX-IgF" firstAttribute="leading" secondItem="f1g-GZ-YFh" secondAttribute="leading" id="ewk-4u-grL"/>
-                            <constraint firstItem="f1g-GZ-YFh" firstAttribute="trailing" secondItem="Trn-eX-IgF" secondAttribute="trailing" id="flZ-zs-GZ0"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NFo-t6-984"/>
+                    <tabBarItem key="tabBarItem" title="Memories" image="tray.full" catalog="system" id="NFo-t6-984"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="table" destination="Trn-eX-IgF" id="Zrj-O6-0tg"/>
@@ -625,7 +636,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-Q7-fmn">
-                                <rect key="frame" x="35" y="420" width="292" height="196"/>
+                                <rect key="frame" x="45" y="420" width="292" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -670,6 +681,7 @@
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="side-blurb" width="143" height="458"/>
         <image name="top_blurb" width="302" height="334"/>
+        <image name="tray.full" catalog="system" width="128" height="88"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
