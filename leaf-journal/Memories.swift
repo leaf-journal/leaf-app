@@ -5,42 +5,56 @@
 //  Created by L V on 4/9/23.
 //
 
-import Foundation
 import UIKit
+import RealmSwift
 
-class Memories: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class Memories: UITableViewController {
     
     
-    @IBOutlet weak var table: UITableView!
+    @IBOutlet var table: UITableView!
     
-    struct Pictures {
-        let title: String
-        let imageName: String
-    }
     
-    let pictures = [
-        Pictures(title: "Cute cat", imageName: "image")
-        
-    ]
+    var entries: Results<Entry>!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let realm = try! Realm()
+        entries = realm.objects(Entry.self)
         table.dataSource = self
-        table.delegate = self
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pictures.count
+        
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let picture = pictures[indexPath.row]
-        let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MemoriesTableViewCell
-        cell.lable.text = picture.title
-        cell.iconImageView.image = UIImage(named: picture.imageName)
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return entries.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let entry = entries[indexPath.row]
+        cell.textLabel?.text = entry.dayCurrent
+        
+        //set image
+        
+        let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        
+        let imageURL = "/" + entry.dayCurrent + ".jpg"
+        
+        let imagePath = documentsDirectory.appending(imageURL)
+        
+        if FileManager.default.fileExists(atPath: imagePath) {
+            let image = UIImage(contentsOfFile: imagePath)
+            
+            cell.imageView?.image = image
+        }
+        
+        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
-    }
 }

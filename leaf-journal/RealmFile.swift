@@ -10,14 +10,12 @@ class Entry: Object {
     @Persisted var journal: String = ""
     @Persisted var dayCurrent: String = ""
     @Persisted var photoCaption: String = ""
-//    @Persisted var imagePath: String = ""
     
     convenience init(journal: String, dayCurrent: String, photoCaption: String) {
          self.init()
          self.journal = journal
          self.dayCurrent = dayCurrent
          self.photoCaption = photoCaption
-//         self.imagePath = imagePath
             
      }
 
