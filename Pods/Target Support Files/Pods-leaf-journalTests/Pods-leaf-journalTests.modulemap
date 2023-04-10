@@ -1,0 +1,6 @@
+framework module Pods_leaf_journalTests {
+  umbrella header "Pods-leaf-journalTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
