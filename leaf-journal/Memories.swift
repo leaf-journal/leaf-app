@@ -76,9 +76,19 @@ class Memories: UITableViewController {
         
         // Pass any necessary data to the view controller
         viewController.selectedDate = entry.dayCurrent
+
         
         // Present the view controller
-        navigationController?.pushViewController(viewController, animated: true)
+        present(viewController, animated: true, completion: nil)
+
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail",
+            let selectedDate = sender as? String,
+            let destinationVC = segue.destination as? DateViewController {
+                destinationVC.selectedDate = selectedDate
+        }
+    }
+    
 
 }
