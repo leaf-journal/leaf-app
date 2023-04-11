@@ -24,6 +24,7 @@ class Memories: UITableViewController {
         entries = realm.objects(Entry.self)
         table.dataSource = self
         
+        
         table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
@@ -38,6 +39,7 @@ class Memories: UITableViewController {
         
         let entry = entries[indexPath.row]
         cell.textLabel?.text = entry.dayCurrent
+        cell.textLabel?.font = UIFont(name: "Malayalam Sangam MN Bold", size: 17.0)
         
         //set image
         

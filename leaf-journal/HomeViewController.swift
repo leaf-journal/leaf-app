@@ -23,16 +23,75 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var Date1: UIButton!
     @IBOutlet weak var Date2: UIButton!
     @IBOutlet weak var Date3: UIButton!
+    @IBOutlet weak var quoteInput: UILabel!
     
-    
+    let quotes = [
+        "Shoot for the moon. Even if you miss, you'll land among the stars. - Norman Vincent Peale",
+        "When you have a dream, you've got to grab it and never let go. - Carol Burnett",
+        "Nothing is impossible. The word itself says 'I'm possible!' - Audrey Hepburn",
+        "Keep your face always toward the sunshine, and shadows will fall behind you. - Walt Whitman",
+        "Success is not final, failure is not fatal: it is the courage to continue that counts. - Winston Churchill",
+        "You define your own life. Don't let other people write your script. - Oprah Winfrey",
+        "You are never too old to set another goal or to dream a new dream. - Malala Yousafzai",
+        "It is during our darkest moments that we must focus to see the light. - Aristotle",
+        "Believe you can and you're halfway there. - Theodore Roosevelt",
+        "Life is like riding a bicycle. To keep your balance, you must keep moving. - Albert Einstein",
+        "Out of the mountain of despair, a stone of hope. - Martin Luther King, Jr.",
+        "Each day comes bearing its gifts. Untie the ribbon. - Ann Ruth Schabacker",
+        "Living is the art of getting used to what we didn’t expect. - Eleanor C. Wood",
+        "Try to be a rainbow in someone else’s cloud. - Maya Angelou",
+        "A problem is a chance for you to do your best. - Duke Ellington",
+        "Time you enjoy wasting was not wasted. - John Lennon",
+        "The world is extremely interesting to a joyful soul. - Alexandra Stoddard",
+        "The sky isn’t the limit—the sky has no limit. - Sarah Barker",
+        "The best thing about the future is that it comes only one day at a time. - Dean Acheson",
+        "Success is often the result of taking a misstep in the right direction. - Al Bernstein",
+        "The only failure is not knowing how to be happy. - Celine Dion",
+        "Be yourself. No one can ever tell you that you’re doing it wrong. - James Leo Herlihy",
+        "Without darkness, there are no dreams. - Karla Kuban",
+        "I’ve learned that people will forget what you’ve said, people will forget what you did, but people will never forget how you made them feel. - Maya Angelou",
+        "If you can’t reach your destination by one road, try another. - Elsa Schiaparelli",
+        "Be like the sun and the meadow, which are not in the least concerned about the coming winter. - George Bernard Shaw",
+        "Vitality shows not only in the ability to persist but in the ability to start over. - F. Scott Fitzgerald",
+        "A dead end is just a good place to turn around. - Naomi Judd",
+        "Success is how high you bounce when you hit bottom. - Gen. George S. Patton",
+        "If your world doesn’t allow you to dream, move to one where you can. - Billy Idol",
+        "Faith is taking the first step. Even when you don’t see the whole staircase. - Martin Luther King Jr.",
+        "The real voyage of discovery consists not in seeking new lands, but in seeing with new eyes. - Marcel Proust",
+        "It’s the rough side of the mountain that’s the easiest to climb; the smooth side doesn’t have anything for you",
+        "Be yourself; everyone else is already taken. - Oscar Wilde",
+          "It is never too late to be what you might have been. - George Eliot",
+          "Everything you can imagine is real. - Pablo Picasso",
+          "Life isn't about finding yourself. Life is about creating yourself. - George Bernard Shaw",
+          "Do what you can, with what you have, where you are. - Theodore Roosevelt",
+          "When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us. - Helen Keller",
+          "It's the possibility of having a dream come true that makes life interesting. - Paulo Coelho",
+          "Turn your wounds into wisdom. - Oprah Winfrey",
+          "Don’t waste your time in anger, regrets, worries, and grudges. Life is too short to be unhappy. - Roy T. Bennett",
+          "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+          "None but ourselves can free our minds. - Bob Marley",
+          "You never fail until you stop trying. - Albert Einstein",
+          "The past has no power over the present moment. - Eckhart Tolle",
+          "Life is a shipwreck, but we must not forget to sing in the lifeboats. - Voltaire",
+          "The purpose of life is to live it, to taste experience to the utmost, to reach out eagerly and without fear for newer and richer experience. - Eleanor Roosevelt",
+          "The important thing to you is not how many years in your life, but how much life in your years! - Edward J. Stieglitz",
+          "Wanting to be someone else is a waste of the person you are. - Marilyn Monroe"
+    ]
+            
+        
     @IBAction func JournalButton(_ sender: UIButton) {
     }
     @IBAction func MemoriesButton(_ sender: UIButton) {
     }
     
+
+    
     override func viewDidLoad() {
             super.viewDidLoad()
         
+            let randomIndex = Int.random(in:0..<quotes.count)
+            quoteInput.text = quotes[randomIndex]
+            
             let formatDate = DateFormatter()
             formatDate.dateFormat = "MM-dd-yy"
         
