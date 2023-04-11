@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     var selectedButton: UIButton?
     let journalPrompts = [
          "What are you grateful for today?",
-         "Describe something that was challening for you today.",
+         "Describe something that was challenging for you today.",
          "What is something you want to learn or improve?",
          // ... add more journal prompts
      ]

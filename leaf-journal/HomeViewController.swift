@@ -53,9 +53,9 @@ class HomeViewController: UIViewController {
             Date3.setTitle(specificDate3, for: .normal)
         
             //Create entries based on each dates' information
-            let entry1 = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate1).first
-            let entry2 = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate2).first
-            let entry3 = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate3).first
+//            let entry1 = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate1).first
+//            let entry2 = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate2).first
+//            let entry3 = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate3).first
             
         
             //Entry 1's image
