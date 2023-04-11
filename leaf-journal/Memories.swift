@@ -60,4 +60,25 @@ class Memories: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let entry = entries[indexPath.row]
+        
+        // Deselect the selected row
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // Load the storyboard with the desired identifier
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate the view controller you want to present
+        let viewController = storyboard.instantiateViewController(withIdentifier: "showDetail") as! DateViewController
+        
+        // Pass any necessary data to the view controller
+        viewController.selectedDate = entry.dayCurrent
+        
+        // Present the view controller
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
 }

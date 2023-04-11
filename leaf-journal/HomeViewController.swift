@@ -142,7 +142,13 @@ class HomeViewController: UIViewController {
         let formatDate = DateFormatter()
         formatDate.dateFormat = "MM-dd-yy"
         let selectedDate = formatDate.string(from: date)
-        performSegue(withIdentifier: "showDetail", sender: selectedDate)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate the view controller you want to present
+        let viewController = storyboard.instantiateViewController(withIdentifier: "showDetail") as! DateViewController
+        viewController.selectedDate = selectedDate
+        
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func twoClicked(_ sender: UIButton) {
@@ -152,7 +158,13 @@ class HomeViewController: UIViewController {
         formatDate.dateFormat = "MM-dd-yy"
         let selectedDate = formatDate.string(from: date)
         print("selected date" + selectedDate)
-        performSegue(withIdentifier: "showDetail", sender: selectedDate)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate the view controller you want to present
+        let viewController = storyboard.instantiateViewController(withIdentifier: "showDetail") as! DateViewController
+        viewController.selectedDate = selectedDate
+        
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func threeClicked(_ sender: UIButton) {
@@ -161,7 +173,13 @@ class HomeViewController: UIViewController {
         let formatDate = DateFormatter()
         formatDate.dateFormat = "MM-dd-yy"
         let selectedDate = formatDate.string(from: date)
-        performSegue(withIdentifier: "showDetail", sender: selectedDate)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate the view controller you want to present
+        let viewController = storyboard.instantiateViewController(withIdentifier: "showDetail") as! DateViewController
+        viewController.selectedDate = selectedDate
+        
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
