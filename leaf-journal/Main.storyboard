@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8oB-wJ-zQW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8oB-wJ-zQW">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-rO-YaT">
-                                <rect key="frame" x="271" y="74" width="99" height="26.333333333333329"/>
+                                <rect key="frame" x="271" y="77" width="99" height="26.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26.333333333333329" id="4Ih-3c-40Q"/>
                                     <constraint firstAttribute="width" constant="99" id="Jaj-NW-kpm"/>
@@ -102,7 +102,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="546-MD-Xfm">
-                                <rect key="frame" x="16" y="239" width="343" height="450"/>
+                                <rect key="frame" x="16" y="239" width="343" height="453"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.92156862750000001" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -141,7 +141,7 @@
                                 <color key="highlightedColor" red="0.0" green="0.16078431369999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQ4-oj-JQA">
-                                <rect key="frame" x="39" y="257" width="295" height="412"/>
+                                <rect key="frame" x="39" y="257" width="295" height="415"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -251,10 +251,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green-blurb" translatesAutoresizingMaskIntoConstraints="NO" id="pW6-YC-eq4">
-                                <rect key="frame" x="-271" y="-134" width="431" height="286"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="side-blurb" translatesAutoresizingMaskIntoConstraints="NO" id="COV-fr-nNt">
                                 <rect key="frame" x="141" y="208" width="411" height="378"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -388,6 +384,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.8980392157" green="0.92156862750000001" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <sections>
                             <tableViewSection id="kPD-ea-Gmx">
                                 <cells>
@@ -441,11 +438,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-w9-j2D">
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled_Artwork 3" translatesAutoresizingMaskIntoConstraints="NO" id="lXq-Np-JxE">
+                                <rect key="frame" x="-33" y="141" width="740" height="629"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-w9-j2D">
                                 <rect key="frame" x="87" y="394" width="218" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Let's Get Journaling">
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="18"/>
                                     <color key="baseBackgroundColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -499,6 +501,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Visit Memories">
+                                    <fontDescription key="titleFontDescription" name="Georgia" family="Georgia" pointSize="18"/>
                                     <color key="baseBackgroundColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -544,7 +547,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leaf-app" translatesAutoresizingMaskIntoConstraints="NO" id="OEW-5k-GLc">
-                                <rect key="frame" x="69" y="214" width="254" height="160"/>
+                                <rect key="frame" x="60" y="200" width="254" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="“Definitions belong to the definers, not to the defined.” - Toni Morrison" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZc-U7-VAf">
@@ -556,7 +559,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="et0-e7-QXv"/>
-                        <color key="backgroundColor" red="0.90196078430000004" green="0.92156862750000001" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <color key="backgroundColor" red="0.97115384615384615" green="1" blue="0.94230769230769229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="jlW-Sv-XOu"/>
                     <connections>
@@ -580,7 +583,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="mB8-CR-ZMr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ad9-HU-Y2K">
-                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -600,8 +603,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled_Artwork 3" translatesAutoresizingMaskIntoConstraints="NO" id="Fzn-ll-bPW">
+                                <rect key="frame" x="52" y="-153" width="468" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled_Artwork 4" translatesAutoresizingMaskIntoConstraints="NO" id="0lZ-M1-Dwq">
+                                <rect key="frame" x="-227" y="46" width="468" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled_Artwork 4" translatesAutoresizingMaskIntoConstraints="NO" id="5Yx-wF-PTR">
+                                <rect key="frame" x="100" y="427" width="468" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gL-SF-Ynm">
-                                <rect key="frame" x="133.33333333333334" y="69" width="108.33333333333334" height="33"/>
+                                <rect key="frame" x="133.33333333333334" y="72" width="108.33333333333334" height="33"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Memory">
                                         <attributes>
@@ -612,56 +627,28 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xk-zf-CJD">
-                                <rect key="frame" x="167.66666666666666" y="130" width="39.666666666666657" height="20"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="MalayalamSangamMN-Bold"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xk-zf-CJD">
+                                <rect key="frame" x="153.33333333333334" y="133" width="68.333333333333343" height="27.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="24"/>
+                                <color key="textColor" red="0.043137254899999998" green="0.14117647059999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top_blurb" translatesAutoresizingMaskIntoConstraints="NO" id="xcT-3Z-enH">
-                                <rect key="frame" x="-6" y="173" width="242" height="252"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-Q7-fmn">
+                                <rect key="frame" x="16" y="391" width="343" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1j-0b-3yo">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1j-0b-3yo">
                                 <rect key="frame" x="24" y="624" width="335" height="58"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="tau-rE-h7i"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="photo cap: ">
+                                    <fragment content="Photo Caption">
                                         <attributes>
                                             <color key="NSColor" systemColor="labelColor"/>
-                                            <font key="NSFont" size="16" name="MalayalamSangamMN"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-Q7-fmn">
-                                <rect key="frame" x="16" y="391" width="343" height="225"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green-blurb" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-FT-170">
-                                <rect key="frame" x="230" y="0.0" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-XC-hrY">
-                                <rect key="frame" x="15" y="188" width="343" height="222"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="222" id="qrh-gE-Szz"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Text here: ">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="labelColor"/>
-                                            <font key="NSFont" size="18" name="MalayalamSangamMN"/>
+                                            <font key="NSFont" size="16" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -671,11 +658,7 @@
                         <viewLayoutGuide key="safeArea" id="8w6-hT-z8h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="leading" secondItem="fg1-EQ-jYf" secondAttribute="leadingMargin" id="1so-wR-vVK"/>
                             <constraint firstItem="8w6-hT-z8h" firstAttribute="bottom" secondItem="U1j-0b-3yo" secondAttribute="bottom" constant="47" id="6TX-Do-izj"/>
-                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="top" secondItem="2xk-zf-CJD" secondAttribute="bottom" constant="38" id="FSS-jV-I8m"/>
-                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="trailing" secondItem="U1j-0b-3yo" secondAttribute="trailing" id="Ism-8f-b7e"/>
-                            <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="Kmn-XC-hrY" secondAttribute="centerX" id="anS-5f-wDV"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="fg1-EQ-jYf" secondAttribute="centerX" id="dop-rT-9bt"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="top" secondItem="8w6-hT-z8h" secondAttribute="top" constant="22" id="ene-fK-gLM"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="2xk-zf-CJD" secondAttribute="centerX" id="gXg-yX-88h"/>
@@ -687,7 +670,6 @@
                     <connections>
                         <outlet property="dateLabel" destination="2xk-zf-CJD" id="zSQ-0L-SzV"/>
                         <outlet property="imageJournal" destination="Ma7-Q7-fmn" id="Os4-gE-EHj"/>
-                        <outlet property="journalEntry" destination="Kmn-XC-hrY" id="5U1-iR-b4z"/>
                         <outlet property="photoCaption" destination="U1j-0b-3yo" id="wfN-Jd-eRj"/>
                     </connections>
                 </viewController>
@@ -702,10 +684,11 @@
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemGrayColor"/>
     <resources>
+        <image name="Untitled_Artwork 3" width="1640" height="2360"/>
+        <image name="Untitled_Artwork 4" width="1640" height="2360"/>
         <image name="bottom_blurb" width="163" height="334"/>
         <image name="camera" catalog="system" width="128" height="93"/>
         <image name="doc.richtext" catalog="system" width="115" height="128"/>
-        <image name="green-blurb" width="350" height="263"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="leaf-app" width="1433" height="1433"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
