@@ -10,6 +10,7 @@ import RealmSwift
 
 class DateViewController: UIViewController {
     
+    var selectedDate: String?
     
     let realm = try! Realm()
 
@@ -20,16 +21,15 @@ class DateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         let formatDate = DateFormatter()
         formatDate.dateFormat = "MM-dd-yy"
         let foundationDate = Foundation.Date()
-        let specificDate = formatDate.string(from: foundationDate)
-        
+        var specificDate = formatDate.string(from: foundationDate)
+        if let selectedDate = selectedDate {
+                    specificDate = selectedDate
+        }
         dateLabel.text = specificDate
         let entry = realm.objects(Entry.self).filter("dayCurrent = %@", specificDate).first
-        
         journalEntry.text = entry?.journal
         photoCaption.text = entry?.photoCaption
         

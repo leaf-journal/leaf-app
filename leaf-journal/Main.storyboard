@@ -457,6 +457,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="JournalButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="TzF-bk-xWA"/>
+                                    <action selector="pressMemoriesButtonClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="wNn-IE-TPn"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="vpG-Zq-6aq"/>
                                 </connections>
                             </button>
@@ -509,6 +510,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="MemoriesButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="Dzq-aQ-lyx"/>
+                                    <action selector="pressJournalButtonClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="Nn7-Aq-uGt"/>
                                     <segue destination="hrL-bb-Scn" kind="show" id="JOI-V5-OVq"/>
                                 </connections>
                             </button>
@@ -521,6 +523,8 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="MemoriesButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="wb2-GD-NwU"/>
+                                    <action selector="dateOneClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="F8h-bc-asI"/>
+                                    <action selector="oneClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="81r-q4-esB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kB7-dv-gFW">
@@ -532,6 +536,8 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="MemoriesButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="Z6s-xE-pwX"/>
+                                    <action selector="dateTwoClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="rk1-Ra-khe"/>
+                                    <action selector="twoClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="pcf-dI-64z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51k-ej-MxM">
@@ -543,6 +549,8 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="MemoriesButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="tQm-gh-NBp"/>
+                                    <action selector="dateThreeClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="WGz-Ef-Wm4"/>
+                                    <action selector="threeClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="ylp-aG-eVg"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="leaf-app" translatesAutoresizingMaskIntoConstraints="NO" id="OEW-5k-GLc">

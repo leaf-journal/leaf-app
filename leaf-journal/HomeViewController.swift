@@ -128,11 +128,49 @@ class HomeViewController: UIViewController {
     
     @IBAction func pressJournalButtonClicked(_ sender: UIButton) {
         // Instantiate the Profile view controller
-        let journalVC = ViewController()
+        let journalVC = Memories()
             
         // Present the Profile view controller modally
         self.present(journalVC, animated: true, completion: nil)
     }
     
     
+   
+    @IBAction func oneClicked(_ sender: UIButton) {
+        let today = Foundation.Date()
+        let date = Calendar.current.date(byAdding: .day, value: -1, to: today)!
+        let formatDate = DateFormatter()
+        formatDate.dateFormat = "MM-dd-yy"
+        let selectedDate = formatDate.string(from: date)
+        performSegue(withIdentifier: "showDetail", sender: selectedDate)
+    }
+    
+    @IBAction func twoClicked(_ sender: UIButton) {
+        let today = Foundation.Date()
+        let date = Calendar.current.date(byAdding: .day, value: -2, to: today)!
+        let formatDate = DateFormatter()
+        formatDate.dateFormat = "MM-dd-yy"
+        let selectedDate = formatDate.string(from: date)
+        performSegue(withIdentifier: "showDetail", sender: selectedDate)
+    }
+    
+    @IBAction func threeClicked(_ sender: UIButton) {
+        let today = Foundation.Date()
+        let date = Calendar.current.date(byAdding: .day, value: -3, to: today)!
+        let formatDate = DateFormatter()
+        formatDate.dateFormat = "MM-dd-yy"
+        let selectedDate = formatDate.string(from: date)
+        performSegue(withIdentifier: "showDetail", sender: selectedDate)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail",
+            let selectedDate = sender as? String,
+            let destinationVC = segue.destination as? DateViewController {
+                destinationVC.selectedDate = selectedDate
+        }
+    }
+
 }
+
+
