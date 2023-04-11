@@ -599,7 +599,7 @@
             </objects>
             <point key="canvasLocation" x="-1295.2" y="-113.05418719211823"/>
         </scene>
-        <!--Item-->
+        <!--Memory-->
         <scene sceneID="FcG-oT-rfj">
             <objects>
                 <viewController id="Nx6-D8-0BR" customClass="DateViewController" customModule="leaf_journal" customModuleProvider="target" sceneMemberID="viewController">
@@ -690,7 +690,7 @@
                             <constraint firstItem="U1j-0b-3yo" firstAttribute="leading" secondItem="8w6-hT-z8h" secondAttribute="leading" constant="24" id="wRK-FJ-hkk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="iab-67-iqr"/>
+                    <tabBarItem key="tabBarItem" title="Memory" image="doc.richtext" catalog="system" id="iab-67-iqr"/>
                     <connections>
                         <outlet property="dateLabel" destination="2xk-zf-CJD" id="zSQ-0L-SzV"/>
                         <outlet property="imageJournal" destination="Ma7-Q7-fmn" id="Os4-gE-EHj"/>
@@ -711,6 +711,7 @@
     <resources>
         <image name="bottom_blurb" width="163" height="334"/>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="doc.richtext" catalog="system" width="115" height="128"/>
         <image name="green-blurb" width="350" height="263"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="leaf-app" width="1433" height="1433"/>
