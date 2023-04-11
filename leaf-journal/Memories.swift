@@ -25,7 +25,7 @@ class Memories: UITableViewController {
         table.dataSource = self
         
         
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell") 
     }
     
     

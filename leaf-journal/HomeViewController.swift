@@ -187,10 +187,15 @@ class HomeViewController: UIViewController {
     
     @IBAction func pressJournalButtonClicked(_ sender: UIButton) {
         // Instantiate the Profile view controller
-        let journalVC = Memories()
+       // let journalVC = Memories()
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate the view controller you want to present
+        let viewController = storyboard.instantiateViewController(withIdentifier: "journalVCID") as! ViewController
             
         // Present the Profile view controller modally
-        self.present(journalVC, animated: true, completion: nil)
+        self.present(viewController, animated: true, completion: nil)
     }
     
     
