@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8oB-wJ-zQW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8oB-wJ-zQW">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,7 +78,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-rO-YaT">
-                                <rect key="frame" x="271" y="77" width="99" height="26.333333333333329"/>
+                                <rect key="frame" x="271" y="74" width="99" height="26.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26.333333333333329" id="4Ih-3c-40Q"/>
                                     <constraint firstAttribute="width" constant="99" id="Jaj-NW-kpm"/>
@@ -102,7 +102,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="546-MD-Xfm">
-                                <rect key="frame" x="16" y="239" width="343" height="453"/>
+                                <rect key="frame" x="16" y="239" width="343" height="450"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.92156862750000001" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -141,7 +141,7 @@
                                 <color key="highlightedColor" red="0.0" green="0.16078431369999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQ4-oj-JQA">
-                                <rect key="frame" x="39" y="257" width="295" height="415"/>
+                                <rect key="frame" x="39" y="257" width="295" height="412"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Tell us more...">
                                         <attributes>
@@ -523,7 +523,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="MemoriesButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="wb2-GD-NwU"/>
-                                    <action selector="dateOneClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="F8h-bc-asI"/>
                                     <action selector="oneClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="81r-q4-esB"/>
                                 </connections>
                             </button>
@@ -536,7 +535,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="MemoriesButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="Z6s-xE-pwX"/>
-                                    <action selector="dateTwoClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="rk1-Ra-khe"/>
                                     <action selector="twoClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="pcf-dI-64z"/>
                                 </connections>
                             </button>
@@ -549,7 +547,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="MemoriesButton:" destination="rj9-Go-cW9" eventType="touchUpInside" id="tQm-gh-NBp"/>
-                                    <action selector="dateThreeClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="WGz-Ef-Wm4"/>
                                     <action selector="threeClicked:" destination="OO2-91-lpt" eventType="touchUpInside" id="ylp-aG-eVg"/>
                                 </connections>
                             </button>
@@ -590,7 +587,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="mB8-CR-ZMr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ad9-HU-Y2K">
-                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -610,51 +607,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Text here: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-XC-hrY">
-                                <rect key="frame" x="10" y="150" width="349" height="265"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top_blurb" translatesAutoresizingMaskIntoConstraints="NO" id="xcT-3Z-enH">
+                                <rect key="frame" x="-109" y="624" width="242" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kmn-XC-hrY">
+                                <rect key="frame" x="16" y="158" width="343" height="222"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="265" id="qrh-gE-Szz"/>
+                                    <constraint firstAttribute="height" constant="222" id="qrh-gE-Szz"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Text here: ">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="18" name="MalayalamSangamMN"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Journal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gL-SF-Ynm">
-                                <rect key="frame" x="159" y="72" width="57" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gL-SF-Ynm">
+                                <rect key="frame" x="133.33333333333334" y="69" width="108.33333333333334" height="33"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Memory">
+                                        <attributes>
+                                            <font key="NSFont" size="29" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xk-zf-CJD">
-                                <rect key="frame" x="166.66666666666666" y="121" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xk-zf-CJD">
+                                <rect key="frame" x="167.66666666666666" y="130" width="39.666666666666657" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="MalayalamSangamMN-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="photo cap: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U1j-0b-3yo">
-                                <rect key="frame" x="24" y="624" width="335" height="31"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1j-0b-3yo">
+                                <rect key="frame" x="24" y="624" width="335" height="58"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="tau-rE-h7i"/>
+                                    <constraint firstAttribute="height" constant="58" id="tau-rE-h7i"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="photo cap: ">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="MalayalamSangamMN"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-Q7-fmn">
-                                <rect key="frame" x="45" y="420" width="292" height="196"/>
+                                <rect key="frame" x="16" y="391" width="343" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="green-blurb" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-FT-170">
+                                <rect key="frame" x="230" y="0.0" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8w6-hT-z8h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="leading" secondItem="fg1-EQ-jYf" secondAttribute="leadingMargin" constant="-6" id="1so-wR-vVK"/>
-                            <constraint firstItem="8w6-hT-z8h" firstAttribute="bottom" secondItem="U1j-0b-3yo" secondAttribute="bottom" constant="74" id="6TX-Do-izj"/>
+                            <constraint firstItem="Kmn-XC-hrY" firstAttribute="leading" secondItem="fg1-EQ-jYf" secondAttribute="leadingMargin" id="1so-wR-vVK"/>
+                            <constraint firstItem="8w6-hT-z8h" firstAttribute="bottom" secondItem="U1j-0b-3yo" secondAttribute="bottom" constant="47" id="6TX-Do-izj"/>
                             <constraint firstItem="Kmn-XC-hrY" firstAttribute="top" secondItem="2xk-zf-CJD" secondAttribute="bottom" constant="8" id="FSS-jV-I8m"/>
                             <constraint firstItem="Kmn-XC-hrY" firstAttribute="trailing" secondItem="U1j-0b-3yo" secondAttribute="trailing" id="Ism-8f-b7e"/>
-                            <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="Kmn-XC-hrY" secondAttribute="centerX" constant="3" id="anS-5f-wDV"/>
+                            <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="Kmn-XC-hrY" secondAttribute="centerX" id="anS-5f-wDV"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="fg1-EQ-jYf" secondAttribute="centerX" id="dop-rT-9bt"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="top" secondItem="8w6-hT-z8h" secondAttribute="top" constant="22" id="ene-fK-gLM"/>
                             <constraint firstItem="7gL-SF-Ynm" firstAttribute="centerX" secondItem="2xk-zf-CJD" secondAttribute="centerX" id="gXg-yX-88h"/>

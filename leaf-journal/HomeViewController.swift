@@ -151,6 +151,7 @@ class HomeViewController: UIViewController {
         let formatDate = DateFormatter()
         formatDate.dateFormat = "MM-dd-yy"
         let selectedDate = formatDate.string(from: date)
+        print("selected date" + selectedDate)
         performSegue(withIdentifier: "showDetail", sender: selectedDate)
     }
     
