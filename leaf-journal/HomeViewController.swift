@@ -186,8 +186,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func pressJournalButtonClicked(_ sender: UIButton) {
-        // Instantiate the Profile view controller
-       // let journalVC = Memories()
+        //  Instantiate the Profile view controller
+        let journalVC = Memories()
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
