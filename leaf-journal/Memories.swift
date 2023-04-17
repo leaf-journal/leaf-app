@@ -31,7 +31,7 @@ class Memories: UIViewController, UITableViewDataSource, UITableViewDelegate {
         entries = realm.objects(Entry.self)
         table.dataSource = self
         table.delegate = self
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell" as CustomTableViewCell)
     }
     
     
