@@ -37,8 +37,8 @@ class Memories: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         let entry = entries[indexPath.row]
-        cell.textLabel?.text = entry.dayCurrent
-        cell.textLabel?.font = UIFont(name: "Georgia", size: 21.0)
+        cell.textLabel?.text = "entry ~ " + entry.dayCurrent
+        cell.textLabel?.font = UIFont(name: "Malayalam Sangam MN 21.0", size: 21.0)
         cell.backgroundColor = UIColor(named: "E6EBDB")
         
         //set image
