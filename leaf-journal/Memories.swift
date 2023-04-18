@@ -8,14 +8,21 @@
 import UIKit
 import RealmSwift
 
-class Memories: UITableViewController {
+class Memories: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    @IBOutlet var table: UITableView!
+    @IBOutlet weak var table: UITableView!
     
     
     var entries: Results<Entry>!
+    struct Test {
+        let title: String
+        let imageName : String
+    }
     
+    let testData = [
+        Test(title: "Today", imageName: "logo")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,23 +30,25 @@ class Memories: UITableViewController {
         let realm = try! Realm()
         entries = realm.objects(Entry.self)
         table.dataSource = self
-        
-        
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell") 
+        table.delegate = self
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell" as CustomTableViewCell)
     }
     
     
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return entries.count
+        //return testData.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let entry = entries[indexPath.row]
-        cell.textLabel?.text = entry.dayCurrent
-        cell.textLabel?.font = UIFont(name: "Malayalam Sangam MN Bold", size: 17.0)
+        //let data = testData[indexPath.row]
+        let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
+        
+        
+        cell.lable.text = entry.dayCurrent
+        cell.lable.font = UIFont(name: "Malayalam Sangam MN Bold", size: 17.0)
         
         //set image
         
@@ -52,18 +61,21 @@ class Memories: UITableViewController {
         if FileManager.default.fileExists(atPath: imagePath) {
             let image = UIImage(contentsOfFile: imagePath)
             
-            cell.imageView?.image = image
+            cell.iconImageView.image = image
         }
         
+        /*
+        cell.lable.text = data.title
+        cell.iconImageView.image = UIImage(named: data.imageName) */
         
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let entry = entries[indexPath.row]
         
