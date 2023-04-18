@@ -38,7 +38,8 @@ class Memories: UITableViewController {
         
         let entry = entries[indexPath.row]
         cell.textLabel?.text = entry.dayCurrent
-        cell.textLabel?.font = UIFont(name: "Malayalam Sangam MN Bold", size: 17.0)
+        cell.textLabel?.font = UIFont(name: "Georgia", size: 21.0)
+        cell.backgroundColor = UIColor(named: "E6EBDB")
         
         //set image
         
@@ -50,7 +51,7 @@ class Memories: UITableViewController {
         
         if FileManager.default.fileExists(atPath: imagePath) {
             let image = UIImage(contentsOfFile: imagePath)
-            
+            cell.imageView?.contentMode = .scaleAspectFill
             cell.imageView?.image = image
         }
         
@@ -93,4 +94,3 @@ class Memories: UITableViewController {
     
 
 }
-
