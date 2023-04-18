@@ -29,7 +29,6 @@
 		C602150F29DFA02D00976F82 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602150E29DFA02D00976F82 /* CalendarViewController.swift */; };
 		C602151129DFA8B100976F82 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602151029DFA8B100976F82 /* DetailedViewController.swift */; };
 		C609FD1F29E38CA300E4D74F /* Memories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C609FD1E29E38CA300E4D74F /* Memories.swift */; };
-		C63E371129EBE59D007BE047 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63E371029EBE59D007BE047 /* CustomTableViewCell.swift */; };
 		C644F51929DF8F1800C5EC9E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C644F51829DF8F1800C5EC9E /* Podfile */; };
 		C6CCA75C29CA8351008858A3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6CCA75B29CA8351008858A3 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
@@ -75,7 +74,6 @@
 		C602150E29DFA02D00976F82 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		C602151029DFA8B100976F82 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		C609FD1E29E38CA300E4D74F /* Memories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memories.swift; sourceTree = "<group>"; };
-		C63E371029EBE59D007BE047 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C644F51829DF8F1800C5EC9E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		C6CCA75B29CA8351008858A3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +148,6 @@
 				C602150E29DFA02D00976F82 /* CalendarViewController.swift */,
 				23C01BDA29E0499C005AE009 /* DateViewController.swift */,
 				C602151029DFA8B100976F82 /* DetailedViewController.swift */,
-				C63E371029EBE59D007BE047 /* CustomTableViewCell.swift */,
 			);
 			path = "leaf-journal";
 			sourceTree = "<group>";
@@ -322,7 +319,6 @@
 				8BECF6F929DCEF58003A6013 /* HomeViewController.swift in Sources */,
 				239A548129A5A9BF009E55F0 /* AppDelegate.swift in Sources */,
 				239D1F5F29CF535D002920F4 /* PhotoViewController.swift in Sources */,
-				C63E371129EBE59D007BE047 /* CustomTableViewCell.swift in Sources */,
 				C602151129DFA8B100976F82 /* DetailedViewController.swift in Sources */,
 				8BECF6F329DCC92B003A6013 /* ViewController.swift in Sources */,
 				C609FD1F29E38CA300E4D74F /* Memories.swift in Sources */,

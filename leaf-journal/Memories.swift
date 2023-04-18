@@ -4,25 +4,17 @@
 //
 //  Created by L V on 4/9/23.
 //
-
 import UIKit
 import RealmSwift
 
-class Memories: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class Memories: UITableViewController {
     
     
-    @IBOutlet weak var table: UITableView!
+    @IBOutlet var table: UITableView!
     
     
     var entries: Results<Entry>!
-    struct Test {
-        let title: String
-        let imageName : String
-    }
     
-    let testData = [
-        Test(title: "Today", imageName: "logo")
-    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,25 +22,23 @@ class Memories: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let realm = try! Realm()
         entries = realm.objects(Entry.self)
         table.dataSource = self
-        table.delegate = self
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell" as CustomTableViewCell)
+        
+        
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return entries.count
-        //return testData.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
         let entry = entries[indexPath.row]
-        //let data = testData[indexPath.row]
-        let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
-        
-        
-        cell.lable.text = entry.dayCurrent
-        cell.lable.font = UIFont(name: "Malayalam Sangam MN Bold", size: 17.0)
+        cell.textLabel?.text = entry.dayCurrent
+        cell.textLabel?.font = UIFont(name: "Malayalam Sangam MN Bold", size: 17.0)
         
         //set image
         
@@ -61,21 +51,18 @@ class Memories: UIViewController, UITableViewDataSource, UITableViewDelegate {
         if FileManager.default.fileExists(atPath: imagePath) {
             let image = UIImage(contentsOfFile: imagePath)
             
-            cell.iconImageView.image = image
+            cell.imageView?.image = image
         }
         
-        /*
-        cell.lable.text = data.title
-        cell.iconImageView.image = UIImage(named: data.imageName) */
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let entry = entries[indexPath.row]
         
@@ -106,3 +93,4 @@ class Memories: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 
 }
+
